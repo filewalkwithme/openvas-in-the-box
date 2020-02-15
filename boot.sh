@@ -2,7 +2,6 @@
 
 /etc/init.d/postgresql start
 /etc/init.d/redis-server start
-# cat /usr/local/var/log/gvm/openvas.log
 
 rm -f /var/run/ospd.pid
 ospd-openvas --log-level=DEBUG -l /usr/local/var/log/ospd-openvas.log

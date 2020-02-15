@@ -192,9 +192,9 @@ ADD redis-openvas.conf /etc/redis/redis.conf
 RUN echo "db_address = /var/run/redis/redis.sock" > /usr/local/etc/openvas/openvas.conf
 
 
-############################################
-# CONFIGURE PERMISSIONS FOR NVT-SYNC #######
-############################################
+################################################
+# CONFIGURE USER AND PERMISSIONS FOR NVT-SYNC ##
+################################################
 
 # Set permissions for NVT sync
 RUN useradd -m openvas
